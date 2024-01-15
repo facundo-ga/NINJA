@@ -1,0 +1,103 @@
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  background-color: #f0f0f0; /* Cambia el color de fondo según tus preferencias */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#score {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 2em;
+  font-weight: 900;
+  color: #333; /* Cambia el color del texto del puntaje según tus preferencias */
+}
+
+#introduction {
+width: 300px; /* Aumenta el ancho para un mejor ajuste del contenido */
+max-width: 80%; /* Limita el ancho máximo para un diseño receptivo */
+height: 150px;
+position: absolute;
+font-weight: 600;
+font-size: 1.2em; /* Aumenta el tamaño de fuente para una mejor legibilidad */
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+text-align: center;
+transition: opacity 4s;
+background-color: rgba(255, 255, 255, 0.9); /* Aumenta la opacidad del fondo */
+border-radius: 15px; /* Redondea las esquinas del contenedor */
+padding: 20px; /* Aumenta el espacio interno para el contenido */
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Aumenta la intensidad de la sombra */
+top: 7cm; /* Baja el contenedor 7 cm */
+left: 50%; /* Centra horizontalmente */
+transform: translateX(-50%); /* Centra horizontalmente */
+}
+
+#introduction {
+width: 300px; /* Aumenta el ancho para un mejor ajuste del contenido */
+height: 150px;
+position: absolute;
+font-weight: 600;
+font-size: 1.2em; /* Aumenta el tamaño de fuente para una mejor legibilidad */
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+text-align: center;
+transition: opacity 4s;
+background-color: rgba(255, 255, 255, 0.9); /* Aumenta la opacidad del fondo */
+border-radius: 15px; /* Redondea las esquinas del contenedor */
+padding: 20px; /* Aumenta el espacio interno para el contenido */
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Aumenta la intensidad de la sombra */
+top: 3cm; /* Baja el contenedor 7 cm */
+left: 50%; /* Centra horizontalmente */
+transform: translateX(-50%); /* Centra horizontalmente */
+}
+
+
+#perfect {
+  width: 120px; /* Ajusta el ancho según tus preferencias */
+  height: 120px; /* Ajusta el alto según tus preferencias */
+  position: absolute;
+  border-radius: 50%; /* Añade un borde redondeado */
+  background-color: #ff0000c4; /* Usa el código hexadecimal para el color naranja */
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: opacity 2s;
+}
+
+
+
+#restart {
+width: 120px; /* Ajusta el ancho como prefieras */
+height: 120px; /* Ajusta el alto como prefieras */
+position: absolute;
+/* border-radius: 50%; */ /* Elimina la propiedad de borde redondeado */
+background-color: orange; /* Corregido el nombre del color */
+color: white;
+border: none;
+font-weight: 700;
+font-size: 1.2em;
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+display: none;
+cursor: pointer;
+top: 50%; /* Centra verticalmente */
+left: 50%; /* Centra horizontalmente */
+transform: translate(-50%, -50%); /* Centra vertical y horizontalmente */
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agrega sombra al botón de reinicio */
+transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+}
+
+#restart:hover {
+background-color: #ff6600; /* Cambia el color al pasar el cursor por encima */
+transform: translate(-50%, -50%) scale(1.1); /* Escala ligeramente al pasar el cursor por encima */
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Sombra más pronunciada al pasar el cursor por encima */
+}
